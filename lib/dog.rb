@@ -14,9 +14,6 @@ class Dog
   end
 
   def self.all
-    dogs = @@all.each do |dog| puts "#{dog}"
-    end
-    dogs
+    puts @@all.map{ |dog| dog.name }
   end
-end
 end
